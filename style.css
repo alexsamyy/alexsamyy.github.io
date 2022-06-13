@@ -337,3 +337,342 @@ li {
     background-color: #808080;
 }
 
+/* MEDIAQUERIES */
+
+@media only screen and (max-width: 768px){
+  .contact-page,
+.competences-page{
+  height: 900px;
+}
+
+.projet-page{
+  height: auto;
+}
+
+#txt-sidenav {
+  margin-top: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  height: 1055px;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  display:none;
+}
+
+.sidenav a{
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover{
+    text-decoration: underline;
+}
+
+.sidenav h3{
+  text-align: center;
+  padding-left: 1%;
+}
+
+.linkedin-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 50px;
+  top: 480px;
+}
+
+.linkedin-icon:hover{
+    width: 42px;
+    height: 42px;
+}
+
+.github-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 110px;
+  top: 480px;
+}
+
+.github-icon:hover{
+    width: 42px;
+    height: 42px;
+}
+
+.copyright{
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  top: 540px;
+  text-align: center;
+  font-size: small;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  height: 480px;
+  left: 50px;
+  top: 20px;
+
+  font-family: "Bree Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 180px;
+  color: white;
+}
+
+.subtitle {
+  position: absolute;
+  width: 251px;
+  height: 43px;
+  left: 260px;
+  top: 469px;
+
+  font-family: "Bree Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: white;
+}
+
+.contact-btn {
+  position: absolute;
+  width: 136px;
+  height: 40px;
+  left: 260px;
+  top: 580px;
+  background-color: #808080;
+  color: white;
+  border-radius: 5px;
+}
+
+.contact-btn:hover{
+    width: 138px;
+    height: 42px;
+}
+
+.parcours-content {
+  border-left: 5px solid white;
+  position: absolute;
+  width: 871px;
+  height: auto;
+  left: 260px;
+  top: 319px;
+  padding-left: 10px;
+  color: white;
+  transition: 0.5s;
+  line-height: 45px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.parcours-content div {
+  padding-bottom: 100px;
+}
+
+.content a{
+    text-decoration: none;
+  color: white;
+}
+
+.parcours-content a:hover{
+    text-decoration: underline;
+}
+
+.content h1,
+h2,
+p {
+  margin-bottom: -25px;
+}
+
+.content p,
+li {
+  line-height: 30px;
+}
+
+.skills-evaluation {
+  position: absolute;
+  width: 871px;
+  height: auto;
+  left: 260px;
+  top: 350px;
+  color: white;
+}
+
+.container {
+  margin-left: 100px;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.skills {
+  text-align: center; /* Right-align text */
+  padding-top: 5px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {
+  width: 100%;
+  background-color: #808080;
+}
+.css {
+  width: 100%;
+  background-color: #808080;
+}
+.js {
+  width: 55%;
+  background-color: #808080;
+}
+.php {
+  width: 60%;
+  background-color: #808080;
+}
+.jquery {
+  width: 30%;
+  background-color: #808080;
+}
+.react {
+  width: 10%;
+  background-color: #808080;
+}
+.reactnative {
+  width: 5%;
+  background-color: #808080;
+}
+.sql {
+  width: 50%;
+  background-color: #808080;
+}
+.csharp {
+  width: 20%;
+  background-color: #808080;
+}
+.figma{
+  width: 30%;
+  background-color: #808080;
+}
+
+.projet {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  margin-left: 250px;
+  margin-top: 350px;
+  max-width: 75%;
+  height: 300px;
+  grid-gap: 40px;
+}
+
+.projet-content{
+  font-size: 30px;
+  text-align: center;
+  max-width: 500px;
+  max-height: 300px;
+}
+
+.image{
+  width: 1100px;
+  height: 650px;
+}
+
+.project-image{
+  width: 500px;
+  height: 300px;
+  transition: transform 200ms ease-in-out 25ms;
+}
+
+.project-image:hover{
+  transform:translateX(10px) translateY(0);
+  cursor: pointer;
+}
+
+#FoneMarket button{
+  font-size: 15px;
+  color: black;
+  width: 240px;
+  height: 30px;
+  position: absolute;
+  top: 280px;
+  border-radius: 10px;
+}
+
+#FoneMarket button:hover{
+  width: 242px;
+}
+
+#FoneMarket{
+  display: none;
+}
+
+.gallery{
+  text-align: left;
+}
+
+.form-contact {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  left: 17px;
+  top: 250px;
+  background-color: white;
+  text-align: center;
+  padding:5%;
+  border-radius: 20px;
+}
+
+.name,
+.mail {
+  width: 300px;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.objet {
+  width: 300px;
+  height: 30px;
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.msg {
+  resize: none;
+  width: 300px;
+  height: 300px;
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.btn{
+    width: 300px;
+    height: 50px;
+    background-color: #2f2f2f;
+    color:white;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #808080;
+}
+
+}
