@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mes projets</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="./media/icon.jpg" type="image/x-icon">
+  </head>
+
+  <body class="projet-page">
+    <div id="mySidenav" class="sidenav">
+      <div id="txt-sidenav">
+        <h3>ALEX<br />SAM-YIN-YANG</h3>
+        <a href="./index.html">Accueil</a>
+        <a href="./parcours.html">Mon parcours</a>
+        <a href="./competences.html">Compétences</a>
+        <a href="./projet.html">Projets</a>
+        <a href="./contact.html">Contact</a>
+        <div id="icons">
+          <a href="https://www.linkedin.com/in/alex-sam-yin-yang-b2a773222/">
+            <img
+              class="linkedin-icon"
+              src="media/linkedin.png"
+              alt="linkedin"
+            />
+          </a>
+          <a href="https://github.com/alexsamyy">
+            <img class="github-icon" src="media/github.png" alt="github" />
+          </a>
+        </div>
+      </div>
+      <span class="copyright"
+        >© Alex SAM-YIN-YANG <br />
+        Conçu sur Figma</span
+      >
+    </div>
+
+    <div id="list-projects">
+      <div class="parcours">
+        <div class="title">
+          <h1>Projets</h1>
+        </div>
+
+        <div class="projet">
+          <div class="projet-content">
+              <img onclick="displayProject()"
+                class="project-image"
+                src="media/connection.png"
+                alt="FoneMarket"
+              />
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div id="FoneMarket">
+        <div class="title">
+          <h1>FoneMarket</h1>
+          <button onclick="window.open('https://github.com/alexsamyy/ecommerce_project')">
+            Lien vers les fichiers du projet</button>
+
+          <div class="gallery">
+
+            <img 
+                class="image"
+                src="media/mcd.png"
+                alt="FoneMarket"
+              />
+            <img 
+                class="image"
+                src="media/connection.png"
+                alt="FoneMarket"
+              /><br>
+            <img 
+                class="image"
+                src="media/create_account.png"
+                alt="FoneMarket"
+              /><br>
+              <img 
+                class="image"
+                src="media/smartphone.png"
+                alt="FoneMarket"
+              />
+              <img 
+                class="image"
+                src="media/product.png"
+                alt="FoneMarket"
+              />
+              <img 
+                class="image"
+                src="media/cart.png"
+                alt="FoneMarket"
+              />
+              <img 
+                class="image"
+                src="media/shipping.png"
+                alt="FoneMarket"
+              />
+              <img 
+                class="image"
+                src="media/payment.png"
+                alt="FoneMarket"
+              />
+              <img 
+                class="image"
+                src="media/confirm_order.png"
+                alt="FoneMarket"
+              />
+              <img 
+                class="image"
+                src="media/confirmed.png"
+                alt="FoneMarket"
+              />
+              <img 
+                class="image"
+                src="media/historique.png"
+                alt="FoneMarket"
+              />
+    
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function displayProject() {
+        var body = (document.getElementById("list-projects").style.display =
+          "none");
+        var project = (document.getElementById("FoneMarket").style.display =
+          "block");
+      }
+    </script>
+  </body>
+</html>

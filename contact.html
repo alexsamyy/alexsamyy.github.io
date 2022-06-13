@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="./media/icon.jpg" type="image/x-icon">
+  </head>
+
+  <body class="contact-page">
+    <div id="mySidenav" class="sidenav">
+      <div id="txt-sidenav">
+        <h3>ALEX<br>SAM-YIN-YANG</h3>
+        <a href="./index.html">Accueil</a>
+        <a href="./parcours.html">Mon parcours</a>
+        <a href="./competences.html">Compétences</a>
+        <a href="./projet.html">Projets</a>
+        <a href="./contact.html">Contact</a>
+        <div id="icons">
+          <a href="https://www.linkedin.com/in/alex-sam-yin-yang-b2a773222/">
+            <img class="linkedin-icon" src="media/linkedin.png" alt="linkedin" />
+          </a>
+          <a href="https://github.com/alexsamyy">
+            <img class="github-icon" src="media/github.png" alt="github">
+          </a>
+        </div>
+      </div>
+      <span class="copyright">© Alex SAM-YIN-YANG <br> Conçu sur Figma</span>
+    </div>
+
+    <div class="parcours">
+      <div class="title">
+        <h1>Contact</h1>
+      </div>
+
+      <div class="form-contact">
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form action="https://formspree.io/f/mpzbnaqq" method="POST">
+          <div class="input-form">
+            <input class="name" type="text" name="nom" placeholder="Nom" />
+            <input
+              class="mail"
+              type="email"
+              name="email"
+              placeholder="Adresse e-mail"
+            /><br />
+            <input
+              class="objet"
+              type="text"
+              name="objet"
+              placeholder="Objet"
+            /><br />
+            <textarea
+              class="msg"
+              name="message"
+              placeholder="Message"
+            ></textarea
+            ><br />
+          </div>
+          <!-- your other form fields go here -->
+          <button class="btn" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
