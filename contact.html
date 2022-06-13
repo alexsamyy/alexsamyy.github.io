@@ -8,8 +8,12 @@
   </head>
 
   <body class="contact-page">
-    <div id="mySidenav" class="sidenav">
-      <div id="txt-sidenav">
+    <div class="hamburger">
+      <button id="menu" onclick="deploy()">Menu</button>
+    </div>
+      <div id="mySidenav" class="sidenav">
+        <button id="close-navbar" onclick="closeNavbar()">X</button>
+        <div id="txt-sidenav">
         <h3>ALEX<br>SAM-YIN-YANG</h3>
         <a href="./index.html">Accueil</a>
         <a href="./parcours.html">Mon parcours</a>
@@ -62,5 +66,17 @@
         </form>
       </div>
     </div>
+
+    <script>
+      function deploy(){
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("mySidenav").style.display = "block";
+      }
+
+      function closeNavbar(){
+        document.getElementById("menu").style.display = "block";
+        document.getElementById("mySidenav").style.display = "none";
+      }
+    </script>
   </body>
 </html>

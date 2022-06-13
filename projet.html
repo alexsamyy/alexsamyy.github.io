@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mes projets</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="shortcut icon" href="./media/icon.jpg" type="image/x-icon">
   </head>
 
   <body class="projet-page">
-    <div id="mySidenav" class="sidenav">
-      <div id="txt-sidenav">
+    <div class="hamburger">
+      <button id="menu" onclick="deploy()">Menu</button>
+    </div>
+      <div id="mySidenav" class="sidenav">
+        <button id="close-navbar" onclick="closeNavbar()">X</button>
+        <div id="txt-sidenav">
         <h3>ALEX<br />SAM-YIN-YANG</h3>
         <a href="./index.html">Accueil</a>
         <a href="./parcours.html">Mon parcours</a>
@@ -29,8 +33,8 @@
           </a>
         </div>
       </div>
-      <span class="copyright"
-        >© Alex SAM-YIN-YANG <br />
+      <span class="copyright">
+        © Alex SAM-YIN-YANG <br />
         Conçu sur Figma</span
       >
     </div>
@@ -129,6 +133,15 @@
           "none");
         var project = (document.getElementById("FoneMarket").style.display =
           "block");
+      }
+      function deploy(){
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("mySidenav").style.display = "block";
+      }
+
+      function closeNavbar(){
+        document.getElementById("menu").style.display = "block";
+        document.getElementById("mySidenav").style.display = "none";
       }
     </script>
   </body>

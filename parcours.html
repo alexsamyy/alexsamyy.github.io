@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon parcours</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="shortcut icon" href="./media/icon.jpg" type="image/x-icon">
   </head>
 
   <body class="parcours-page">
-    <div id="mySidenav" class="sidenav">
-      <div id="txt-sidenav">
+    <div class="hamburger">
+      <button id="menu" onclick="deploy()">Menu</button>
+    </div>
+      <div id="mySidenav" class="sidenav">
+        <button id="close-navbar" onclick="closeNavbar()">X</button>
+        <div id="txt-sidenav">
         <h3>ALEX<br>SAM-YIN-YANG</h3>
         <a href="./index.html">Accueil</a>
         <a href="./parcours.html">Mon parcours</a>
@@ -70,5 +74,17 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function deploy(){
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("mySidenav").style.display = "block";
+      }
+
+      function closeNavbar(){
+        document.getElementById("menu").style.display = "block";
+        document.getElementById("mySidenav").style.display = "none";
+      }
+    </script>
   </body>
 </html>
