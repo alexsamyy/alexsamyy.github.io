@@ -46,8 +46,8 @@
         </div>
 
         <div class="projet">
-          <div class="projet-content">
-              <img onclick="displayProject()"
+          <div onclick="displayProject()" class="projet-content">
+              <img
                 class="project-image"
                 src="media/connection.png"
                 alt="FoneMarket"
@@ -129,10 +129,12 @@
 
     <script>
       function displayProject() {
+        alert("Bonsoir");
+        /*
         var body = (document.getElementById("list-projects").style.display =
           "none");
         var project = (document.getElementById("FoneMarket").style.display =
-          "block");
+          "block");*/
       }
       function deploy(){
         document.getElementById("menu").style.display = "none";

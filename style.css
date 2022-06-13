@@ -375,6 +375,7 @@ li {
 /* -------------------------------------------*/
 
 @media only screen and (max-width: 768px) {
+
   .contact-page,
   .competences-page {
     height: 900px;
@@ -544,9 +545,9 @@ li {
 
   .skills-evaluation {
     position: absolute;
-    width: 250px;
+    width: 340px;
     height: auto;
-    left: 20px;
+    left: 30px;
     top: 150px;
     color: white;
   }
@@ -612,21 +613,19 @@ li {
   }
 
   .projet {
-    display: grid;
-    grid-template-columns: auto;
-    padding: 10px;
-    margin-left: 2px;
+    margin-left: 0;
     margin-top: 100px;
     max-width: 75%;
     height: 30px;
     grid-gap: 4px;
+
   }
 
   .projet-content {
     font-size: 30px;
     text-align: center;
-    max-width: 500px;
-    max-height: 300px;
+    width: 400px;
+    height: 200px;
   }
 
   .image {
@@ -635,8 +634,9 @@ li {
   }
 
   .project-image {
-    width: 255px;
-    height: 127.5px;
+    width: 400px;
+    height: 200px;
+    opacity: 100%;
     transition: transform 200ms ease-in-out 25ms;
   }
 
@@ -669,9 +669,9 @@ li {
 
   .form-contact {
     position: absolute;
-    width: 255px;
+    width: 315px;
     height: auto;
-    left: 5px;
+    left: 20px;
     top: 140px;
     background-color: white;
     text-align: center;
@@ -720,7 +720,7 @@ li {
     border: none;
     color: white;
     background-color: #2f2f2f;
-    width: 1000px;
+    width: 200px;
     text-align: left;
     font-size: large;
   }
