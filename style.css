@@ -720,7 +720,8 @@ li {
     border: none;
     color: white;
     background-color: #2f2f2f;
-    width: 60px;
+    width: 1000px;
+    text-align: left;
     font-size: large;
   }
 
@@ -735,6 +736,7 @@ li {
     border: none;
     background-color: white;
     font-size: x-large;
+    display: block;
   }
 
   #close-navbar:hover {
