@@ -732,13 +732,14 @@ li {
   #close-navbar {
     position: absolute;
     top: 10px;
-    left: 160px;
+    left: 140px;
     border: none;
     background-color: white;
     font-size: x-large;
     display: block;
-    width: 100px;
+    width: 28px;
     text-align: left;
+    color:black
   }
 
   #close-navbar:hover {
