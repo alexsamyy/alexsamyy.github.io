@@ -353,6 +353,7 @@ li {
   z-index: 1;
   border: none;
   background-color: white;
+  display: none;
 }
 
 .hamburger{
@@ -362,11 +363,13 @@ li {
   position: absolute;
   left: 0;
   top: 0;
+  display: none;
 }
 
 .icon-menu{
   width: 40px;
   background-color: white;
+  display: none;
 }
 
 .icon-menu:hover{
@@ -399,6 +402,13 @@ li {
 /* -------------------------------------------*/
 
 @media only screen and (max-width: 768px) {
+
+  body {
+    min-height: 100vh;
+    max-width: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 
   .contact-page,
   .competences-page {
@@ -741,15 +751,34 @@ li {
     background-color: #808080;
   }
 
-  #menu {
-    position: absolute;
+ 
+#menu{
+  position: absolute;
   z-index: 1;
-  }
+  border: none;
+  background-color: white;
+  display: block;
+}
 
-  .hamburger {
-    display: block;
-  }
+.hamburger{
+  width: 100%;
+  height: 46px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+}
 
+.icon-menu{
+  width: 40px;
+  background-color: white;
+  display: block;
+}
+
+.icon-menu:hover{
+  cursor: pointer;
+}
   #close-navbar {
     position: absolute;
     top: 10px;
