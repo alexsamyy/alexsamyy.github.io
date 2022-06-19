@@ -1,61 +1,220 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="shortcut icon" href="./media/icon.jpg" type="image/x-icon">
-  </head>
 
-  <body class="home-page">
-  <div class="hamburger">
-    <button id="menu" onclick="deploy()"><img class="icon-menu" src="media/menu-ic.png"></button>
-  </div>
-    <div id="mySidenav" class="sidenav">
-      <button id="close-navbar" onclick="closeNavbar()">X</button>
-      <div id="txt-sidenav">
-        <h3>ALEX<br>SAM-YIN-YANG</h3>
-        <a href="https://alexsamyy.github.io/">Accueil</a>
-        <a href="./parcours.html">Mon parcours</a>
-        <a href="./competences.html">Compétences</a>
-        <a href="./projet.html">Projets</a>
-        <a href="./contact.html">Contact</a>
-        <div id="icons">
-          <a href="https://www.linkedin.com/in/alex-sam-yin-yang-b2a773222/">
-          <img class="linkedin-icon" src="media/linkedin.png" alt="linkedin" />
-        </a>
-        <a href="https://github.com/alexsamyy">
-          <img class="github-icon" src="media/github.png" alt="github">
-        </a>
-        </div>
-      </div>
-      <span class="copyright">© Alex SAM-YIN-YANG <br> Conçu sur Figma</span>
-    </div>
+<head>
+	<title>Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<link rel="stylesheet" href="assets/css/added.css" />
+</head>
 
-    <div class="home">
-      <div class="title">
-        <h1>Bonjour, </br>je suis Alex !</h1>
-      </div>
+<body class="is-preload">
+	<!-- Wrapper-->
+	<div id="wrapper">
+		<!-- Nav -->
+		<nav id="nav">
+			<a href="#" class="icon solid fa-home"><span>Accueil</span></a>
+			<a href="#work" class="icon solid fa-folder"><span>Projets</span></a>
+			<a href="#parcours" style="text-decoration: none" class="icon solid fa-school"><span>Formation</span></a>
+			<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+			<a href="https://www.linkedin.com/in/alex-sam-yin-yang-b2a773222/"
+				class="icon brands fa-linkedin"><span>Linkedin</span></a>
+		</nav>
 
-      <div class="subtitle">
-        <h4>Développeur Web</h4>
-      </div>
+		<!-- Main -->
+		<div id="main">
+			<!-- Me -->
+			<article id="home" class="panel intro">
+				<header>
+					<h1 style="font-size: 45px">Alex<br>SAM-YIN-YANG</h1>
+					<h4>Développeur Web</h4>
+					<button id="cv_btn" onclick="window.open('./media/CV_ALEX_SAM-YIN-YANG.pdf');">
+						<h4 id="cv">Télécharger mon CV</h4>
+					</button>
+				</header>
+				<a id="about-me">
+					<h2>À propos de moi</h2>
+					<br />
+					<span>Je suis <b>Alex</b>, j'ai <b>19 ans</b>. Je suis
+						actuellement étudiant à <b>l'école informatique INSTA</b> à Paris en
+						<b><span href="#BTS">BTS SIO option SLAM</span></b>. J'ai commencé l'informatique en classe de
+						Terminale S option
+						Informatique et Sciences du Numérique. Ayant d'abord effectué une
+						année à l'école d'ingénieurs informatique l'EPITA, j'ai eu
+						l'occasion de concevoir un jeu-vidéo et d'apprendre différents
+						langages associés et l'algorithmique.</span><br/><br>
+						<h4 style="text-decoration: underline;">Compétences</h4>
+						<span>
+							<b>Langages :</b><br>
+							- HTML / CSS<br>
+							- JavaScript (AJAX, JQuery)<br>
+							- PHP<br>
+							- SQL<br>
+							- C#<br>
+							- Python<br>
+							- React<br>
+							- React-Native<br>
+							<b>Framework :</b><br>
+							- Bootstrap<br>
+							<b>Outil UI :</b><br>
+							- Figma
+						
+						</span>
+				</a>
+			</article>
 
-      <div>
-        <button class="contact-btn" onclick=window.location.href="./contact.html">Contactez-moi</button>
-      </div>
-    </div>
+			<!-- MON PARCOURS -->
+			<article id="parcours" class="panel intro">
+				<div id="parcours_text">
+					<article id="work" class="panel">
+						<h2>Formation</h2><br>
 
-    <script>
-      function deploy(){
-        document.getElementById("menu").style.display = "none";
-        document.getElementById("mySidenav").style.display = "block";
-      }
+						<div class="timeline">
 
-      function closeNavbar(){
-        document.getElementById("menu").style.display = "block";
-        document.getElementById("mySidenav").style.display = "none";
-      }
-    </script>
-  </body>
+							<h2 class="timeline__item timeline__item--year">2021 - 2023</h2>
+
+							<div class="timeline__item">
+								<h3 class="timeline__title"><a style="color: black"
+										href="https://www.insta.fr/">INSTA - École d'informatique</a><br>BTS SIO option SLAM</h3>
+								<p class="timeline__blurb">Réalisation d'un <a
+										style="text-decoration: none; color: black" href="#work">
+										Réalisation d'un site web de e-commerce dans le cadre de l'école.<br>
+										Langages utilisés : HTML / CSS / JavaScript / PHP / SQL<br>
+										Framework utilisé : Bootstrap<br>
+										- Création / Connexion de l'utilisateur<br>
+										- Affichage des articles en vente<br>
+										- Mise en place d'un panier<br>
+										- Historique / Création d'un bon de commande
+										
+										
+									</p>
+							</div>
+
+							<h2 class="timeline__item timeline__item--year">2020 - 2021</h2>
+
+							<div class="timeline__item">
+								<h3 class="timeline__title"><a style="color: black"
+										href="https://www.epita.fr/">EPITA</a> - <a
+										style="text-decoration: none; color: black" href="./bts.html">Classe
+										préparatoire intégrée</a></h3>
+								<p class="timeline__blurb">Réalisation d'un jeu-vidéo en C# sur Unity </a> dans le cadre de
+									l'école.</p>
+							</div>
+
+							<h2 class="timeline__item timeline__item--year">2017 - 2020</h2>
+
+							<div class="timeline__item">
+								<h3 class="timeline__title">
+									<a style="color: black" href="http://lycee-llisle.ac-reunion.fr/">Lycée Leconte de Lisle</a>
+									<br>Baccalauréat Scientifiques internationale chinoise option
+									Informatique et Sciences du Numérique</h3>
+								<p class="timeline__blurb">Mention bien<br>
+									- Bénévolat au sein du journal du lycée "Leconte du Butor" en tant que rédacteur, photographe et maquettiste.<br>
+									<a style="color:black"
+										href="http://crdp.re/clemi/concours-mediatiks-2018-2019/">Lauréat national 2019
+										au concours Mediatiks</a><br>
+									- Stage de photographie à la Cité des Arts de la Réunion avec le photographe
+									<a style="color: black" href="http://www.morganfache.net/">Morgan Fache</a>
+									ayant pour thème "Le Grand Chemin" donnant lieu à <a style="color:black"
+									href="https://www.citedesarts.re/LE-GRAND-CHEMIN-THE-LONG-WAY">un vernissage</a>.<br>
+									- Prise de vues du stage de street art avec le graffeur <a style="color:black"
+									href="https://fr-fr.facebook.com/meo974graff/">Méo974</a> et de la réalisation de la fresque
+									<a style="color:black"
+									href="https://la1ere.francetvinfo.fr/reunion/buste-fresque-hommage-leconte-lisle-715799.html">en hommage au poète Leconte de Lisle</a>. 
+									</p>
+							</div>
+					</article>
+					<article id="work" class="panel">
+						<h2>Expériences professionnelles</h2><br>
+
+						<div class="timeline">
+
+							<h2 class="timeline__item timeline__item--year">Juillet 2021 - Août 2021</h2>
+
+							<div class="timeline__item">
+								<h3 class="timeline__title">BRED Banque Populaire - Auxiliaire d'été</h3></a>
+								<p class="timeline__blurb">Hôte d'accueil de l'agence BRED à St-Denis, La Réunion.<br>
+								Prise en charge des prospects et des clients.<br>
+								Réalisation d'opérations bancaires sensibles (virements, délivrance des commandes de fonds, chéquiers,...)<br>
+								Création d'un tableau Excel pour réaliser des statistiques à propos de l'accueil (nombre de visites par jour,...)</p>
+							</div><br>
+
+						</div>
+					</article>
+				</div>
+			</article>
+
+			<!-- PROJETS -->
+			<article id="work" class="panel">
+				<header>
+					<h2>Projets</h2>
+				</header>
+
+				<section>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<a title="Cliquez pour voir le projet"
+								href="https://github.com/alexsamyy/ecommerce_project" class="link_proj1">
+								<div class="project1">
+									<img class="image fit" src="media/FoneMarket.JPG" alt="" />
+									<span class="legende"><b>FoneMarket</b> est un projet réalisé durant ma 1ère
+										année de BTS informatique. <br />Nous devions réaliser un
+										site de<br>e-commerce avec les langages HTML / CSS / JavaScript
+										/ PHP / MySQL / Jquery / Bootstrap.
+									</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact" class="panel">
+				<header>
+					<h2>Contact</h2>
+				</header>
+				<form action="https://formspree.io/f/mpzbnaqq" method="post">
+					<div>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<input type="text" name="name" placeholder="Nom" />
+							</div>
+							<div class="col-6 col-12-medium">
+								<input type="text" name="email" placeholder="E-mail" />
+							</div>
+							<div class="col-12">
+								<input type="text" name="subject" placeholder="Objet" />
+							</div>
+							<div class="col-12">
+								<textarea id="message_contact" name="message" placeholder="Message" rows="6"></textarea>
+							</div>
+							<div class="col-12">
+								<input type="submit" value="Envoyer" />
+							</div>
+						</div>
+					</div>
+				</form>
+			</article>
+
+			<!-- Footer -->
+			<div id="footer">
+				<ul class="copyright">
+					<li>&copy; Alex SAM-YIN-YANG - 2022</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+</body>
+
 </html>
