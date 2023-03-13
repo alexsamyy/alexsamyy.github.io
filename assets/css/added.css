@@ -103,6 +103,6 @@
   .js {width: 65%; background-color: #f44336; height: 30px;}
   .php {width: 60%; background-color: #808080; height: 30px;}
 
-.header{
+#left-side{
     background-color: black;
 }
