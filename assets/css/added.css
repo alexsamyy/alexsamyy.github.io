@@ -26,6 +26,10 @@
     width: 140px;
 }
 
+#btn_linkedin{
+    margin-top: 0.3em;
+}
+
 #cv_btn:hover, #btn_linkedin:hover{
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
